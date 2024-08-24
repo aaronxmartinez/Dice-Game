@@ -20,3 +20,5 @@ if (randomNumber1 === 1){
 } else if (randomNumber1 === 6){
     firstDice.setAttribute("src", "img/dice6.png");
 }
+
+// changing image for the second dice based on random number

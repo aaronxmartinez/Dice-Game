@@ -16,7 +16,6 @@ body {
     background-image: url(img/dice_table.avif);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -31,4 +30,8 @@ h1 {
 p {
     font-size: 2rem;
     color: white;
+}
+
+img {
+    width: 85%;
 }

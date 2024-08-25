@@ -2,6 +2,11 @@
 var firstUserInput = Number(prompt("Enter First Number: "));
 var secondUserInput = Number(prompt("Enter Second Number: "));
 
+// seeing if user inputs are numbers or not
+// if (Number.NaN(firstUserInput)){
+//     alert("Enter a number bitch mf");
+// }
+
 // generating random number
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 var randomNumber2 = Math.floor(Math.random() * 6) + 1;

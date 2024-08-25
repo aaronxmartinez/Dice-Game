@@ -1,3 +1,7 @@
+// getting users number input
+var firstUserInput = Number(prompt("Enter First Number: "));
+var secondUserInput = Number(prompt("Enter Second Number: "));
+
 // generating random number
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 var randomNumber2 = Math.floor(Math.random() * 6) + 1;

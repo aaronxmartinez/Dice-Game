@@ -22,3 +22,16 @@ if (randomNumber1 === 1){
 }
 
 // changing image for the second dice based on random number
+if (randomNumber2 === 1){
+    secondDice.setAttribute("src", "img/dice1.png");
+} else if (randomNumber2 === 2){
+    secondDice.setAttribute("src", "img/dice2.png");
+} else if (randomNumber2 === 3){
+    secondDice.setAttribute("src", "img/dice3.png");
+} else if (randomNumber2 === 4){
+    secondDice.setAttribute("src", "img/dice4.png");
+} else if (randomNumber2 === 5){
+    secondDice.setAttribute("src", "img/dice5.png");
+} else if (randomNumber2 === 6){
+    secondDice.setAttribute("src", "img/dice6.png");
+}

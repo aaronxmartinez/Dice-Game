@@ -59,3 +59,8 @@ if (isNaN(firstUserInput) || isNaN(secondUserInput)){
     firstDice.setAttribute("src", "img/dice1.png");
     secondDice.setAttribute("src", "img/dice1.png");
 }
+
+// adding function to refresh page when the refresh page button is pressed
+document.querySelector("button").onclick = function(){
+    window.location.reload();
+};

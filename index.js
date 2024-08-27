@@ -2,10 +2,6 @@
 var firstUserInput = Number(prompt("Enter First Number: "));
 var secondUserInput = Number(prompt("Enter Second Number: "));
 
-// seeing if user inputs are numbers or not
-// if (Number.NaN(firstUserInput)){
-//     alert("Enter a number bitch mf");
-// }
 
 // generating random number
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
@@ -43,4 +39,9 @@ if (randomNumber2 === 1){
     secondDice.setAttribute("src", "img/dice5.png");
 } else if (randomNumber2 === 6){
     secondDice.setAttribute("src", "img/dice6.png");
+}
+
+// seeing if user inputs are numbers or not
+if (isNaN(firstUserInput) || isNaN(secondUserInput)){
+    alert("Enter a number bitch mf");
 }

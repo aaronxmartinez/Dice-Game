@@ -41,7 +41,11 @@ if (randomNumber2 === 1){
     secondDice.setAttribute("src", "img/dice6.png");
 }
 
+
+
 // seeing if user inputs are numbers or not
 if (isNaN(firstUserInput) || isNaN(secondUserInput)){
-    alert("Enter a number bitch mf");
+    alert("Please Enter a Number.");
+    firstDice.setAttribute("src", "img/dice1.png");
+    secondDice.setAttribute("src", "img/dice1.png");
 }

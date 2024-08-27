@@ -42,8 +42,11 @@ img {
     border:#4ECCA3 1px solid;
     border-radius: 3px;
     color: #4ECCA3;
-    background-color: #232931;
-
+    background-color: #393E46;
+    font-size: large;
+    text-shadow: 5px 0 #232931;
+    height: 50px;
+    width: 150px;
 }
 
 .btn:hover {

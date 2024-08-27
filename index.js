@@ -4,8 +4,8 @@ var secondUserInput = Number(prompt("Enter Second Number: "));
 
 
 // generating random number
-var randomNumber1 = Math.floor(Math.random() * 2) + 1;
-var randomNumber2 = Math.floor(Math.random() * 2) + 1;
+var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
 // creating variables for dice
 var firstDice = document.querySelector(".img1");
@@ -55,7 +55,7 @@ if (firstUserInput === randomNumber1 && secondUserInput === randomNumber2){
 
 // seeing if user inputs are numbers or not
 if (isNaN(firstUserInput) || isNaN(secondUserInput)){
-    alert("Please Enter a Number.");
+    alert("Both Inputs Must be a Number.");
     firstDice.setAttribute("src", "img/dice1.png");
     secondDice.setAttribute("src", "img/dice1.png");
 }

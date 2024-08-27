@@ -41,7 +41,14 @@ if (randomNumber2 === 1){
     secondDice.setAttribute("src", "img/dice6.png");
 }
 
-
+// declaring a winner
+if (firstUserInput === randomNumber1){
+    document.querySelector("h1").innerHTML = "Player 1 Wins!!";
+    document.querySelector("h1").style.fontSize = "9rem";
+} else if (secondUserInput === randomNumber2){
+    document.querySelector("h1").innerHTML = "Player 2 Wins!!"
+    document.querySelector("h1").style.fontSize = "9rem";
+}
 
 // seeing if user inputs are numbers or not
 if (isNaN(firstUserInput) || isNaN(secondUserInput)){

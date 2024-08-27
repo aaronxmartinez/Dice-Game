@@ -1,3 +1,7 @@
+body {
+    background-color: #393E46;
+}
+
 .container {
     width: 70%;
     margin: auto;
@@ -13,9 +17,6 @@
     display: inline-block;
 }
 
-body {
-    background-color: #393E46;
-}
 
 h1 {
     margin: 30px;
@@ -34,4 +35,19 @@ p {
 
 img {
     width: 85%;
+}
+
+.btn {
+    margin-top: 6rem;
+    border:#4ECCA3 1px solid;
+    border-radius: 3px;
+    color: #4ECCA3;
+    background-color: #232931;
+
+}
+
+.btn:hover {
+    border: #80dfc0 1px solid;
+    color: #80dfc0;
+    background-color: #434c58;
 }

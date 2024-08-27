@@ -1,7 +1,18 @@
 // getting users number input
-var firstUserInput = Number(prompt("Enter First Number: "));
-var secondUserInput = Number(prompt("Enter Second Number: "));
+var firstUserInput = Number(prompt("Player 1, Enter a Number 1-6: "));
+var secondUserInput = Number(prompt("Player 2, Enter a Number 1-6: "));
 
+// adding function to refresh page when the refresh page button is pressed
+document.querySelector("button").onclick = function(){
+    window.location.reload();
+};
+
+// checking if both user inputs are between 1 and 6
+if (firstUserInput > 6 || firstUserInput < 1 || secondUserInput > 6 || secondUserInput < 1){
+    alert("Please Put a Number Between 1 and 6");
+    firstDice.setAttribute("src", "img/dice1.png");
+    secondDice.setAttribute("src", "img/dice1.png");
+}
 
 // generating random number
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
@@ -59,8 +70,3 @@ if (isNaN(firstUserInput) || isNaN(secondUserInput)){
     firstDice.setAttribute("src", "img/dice1.png");
     secondDice.setAttribute("src", "img/dice1.png");
 }
-
-// adding function to refresh page when the refresh page button is pressed
-document.querySelector("button").onclick = function(){
-    window.location.reload();
-};

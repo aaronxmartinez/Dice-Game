@@ -4,8 +4,8 @@ var secondUserInput = Number(prompt("Enter Second Number: "));
 
 
 // generating random number
-var randomNumber1 = Math.floor(Math.random() * 6) + 1;
-var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+var randomNumber1 = Math.floor(Math.random() * 2) + 1;
+var randomNumber2 = Math.floor(Math.random() * 2) + 1;
 
 // creating variables for dice
 var firstDice = document.querySelector(".img1");
@@ -41,8 +41,11 @@ if (randomNumber2 === 1){
     secondDice.setAttribute("src", "img/dice6.png");
 }
 
-// declaring a winner
-if (firstUserInput === randomNumber1){
+// declaring a winner and if it's a draw
+if (firstUserInput === randomNumber1 && secondUserInput === randomNumber2){
+    document.querySelector("h1").innerHTML = "Draw";
+    document.querySelector("h1").style.fontSize = "10rem";
+} else if (firstUserInput === randomNumber1){
     document.querySelector("h1").innerHTML = "Player 1 Wins!!";
     document.querySelector("h1").style.fontSize = "9rem";
 } else if (secondUserInput === randomNumber2){
